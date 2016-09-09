@@ -8,7 +8,7 @@ gulp.task('babel', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('webserver', ['babel'], function() {
+gulp.task('webserver', function() {
   gulp.src('.')
     .pipe(webserver({
       livereload: true,
@@ -16,9 +16,9 @@ gulp.task('webserver', ['babel'], function() {
       open: true
     }));
 });
-/*
+
 gulp.task('watch', function(){
     gulp.watch('js/*.js', ['babel']);
-});*/
+});
 
-gulp.task('default', ['webserver']);
+gulp.task('default', ['watch', 'webserver']);

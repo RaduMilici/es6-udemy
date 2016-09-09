@@ -1,3 +1,5 @@
+(function(){
+
 var products = [
   {name: 'tomato', type: 'vegetable', quantity: 10, price: 4},
   {name: 'orange', type: 'fruit', quantity: 0, price: 12},
@@ -12,4 +14,6 @@ filteredProducts = products.filter(function(product){
   product.price < 10;
 });
 
-console.log(filteredProducts); // [{the tomato object}]
+//console.log(filteredProducts); // [{the tomato object}]
+
+})();

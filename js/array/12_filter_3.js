@@ -1,3 +1,5 @@
+(function(){
+
 var post = { id: 4, title: 'New post' };
 var comments = [
   { postId: 4, content: 'awesome post' },
@@ -12,4 +14,6 @@ function commentsForPost(post, comments){
 }
 
 var filteredComments = commentsForPost(post, comments);
-console.log(filteredComments); // [{awesome post}, {meh}]
+//console.log(filteredComments); // [{awesome post}, {meh}]
+
+})();

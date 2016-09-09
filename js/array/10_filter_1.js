@@ -1,8 +1,10 @@
+(function(){
+
 var products = [
   {name: 'tomato', type: 'vegetable'},
   {name: 'orange', type: 'fruit'},
   {name: 'apple', type: 'fruit'},
-  {name: 'lettuce', type: 'vegetable'},
+  {name: 'lettuce', type: 'vegetable'}, 
 ]; 
 var filteredProducts = [];
 
@@ -13,7 +15,7 @@ for (var i = 0; i < products.length; i++){
   }
 }
 
-console.log(filteredProducts); 
+//console.log(filteredProducts); 
 
 // es6
 filteredProducts = products.filter(function(product, i, array){
@@ -21,4 +23,6 @@ filteredProducts = products.filter(function(product, i, array){
   return product.type === 'vegetable';
 });
 
-console.log(filteredProducts);
+//console.log(filteredProducts);
+
+})();

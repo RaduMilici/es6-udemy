@@ -1,3 +1,5 @@
+(function(){
+
 var cars = [
   { model: 'Citroen', price: 2000 },
   { model: 'Fiat', price: 2500 }
@@ -8,4 +10,6 @@ var prices = cars.map(function(car){
   return car.price;
 });
 
-console.log(prices); 
+//console.log(prices); 
+
+})();

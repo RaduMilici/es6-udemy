@@ -5,6 +5,6 @@ for(var i = 0; i < colors.length; i++)
   console.log(colors[i]);
 
 // es6
-colors.forEach(function(color){
-  console.log(color);
+colors.forEach(function(color, i, array){
+  console.log(color, i, array);
 });

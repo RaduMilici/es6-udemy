@@ -11,9 +11,9 @@ class Car{
 }
 
 class Citroen extends Car{
-  constructor({ title, color }){
-    super({ title });
-    this.color = color;
+  constructor(options){
+    super(options);
+    this.color = options.color;
   }
 
   honk(){
@@ -22,7 +22,7 @@ class Citroen extends Car{
 }
 
 const car = new Citroen({ title: 'C3', color: 'silver' });
-car.drive(); // C3 is driving.
-car.honk();  // A silver C3 is honking.
+//car.drive(); // C3 is driving.
+//car.honk();  // A silver C3 is honking.
 
 })();
